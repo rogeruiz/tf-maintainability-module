@@ -1,5 +1,5 @@
 variable "labels_main" {
-  description = "The labels to give to names and tags."
+  description = "A label object to use for all Main resources."
   type = object({
     namespace  = string
     stage      = string
@@ -21,7 +21,7 @@ variable "labels_main" {
 }
 
 variable "labels_aux" {
-  description = "The labels to give to names and tags."
+  description = "A label object to use for all Auxillary resources."
   type = object({
     namespace  = string
     stage      = string
