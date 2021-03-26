@@ -12,5 +12,6 @@ contract testing modules and enforcing those ideas.
 Currently, this project leverages the following tools:
 
 - https://github.com/cloudposse/terraform-terraform-label
-- https://github.com/thazelart/terraform-validator
+- (buggy) https://github.com/thazelart/terraform-validator
+- https://github.com/terraform-linters/tflint
 
