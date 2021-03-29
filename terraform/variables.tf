@@ -9,6 +9,11 @@ variable "labels_main" {
     tags       = map(string)
   })
 
+  #validation {
+  #condition     = contains(["PRIVATE", "PRIVATE_TCP", "PUBLIC"], var.labels_main.stage)
+  #error_message = "Stage must be an environment. eg. \"development\", \"staging\", \"production\"."
+  #}
+
   validation {
     condition     = length(var.labels_main.delimiter) == 1 && can(regex("^[-_]$", var.labels_main.delimiter))
     error_message = "Delimiter must be a single character. eg. \"_\", \"-\"."
